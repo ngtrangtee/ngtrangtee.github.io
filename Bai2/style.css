@@ -1,0 +1,22 @@
+h6 {
+    color: palevioletred;
+    font-size: 50px;
+}
+
+p, li, a {
+    font-size: 50px;
+}
+
+/* Chữ màu tím */
+.text-purple {
+    color:purple;
+}
+
+/* Viết hoa */
+.text-upper {
+    text-transform: uppercase;
+}
+
+li.text-purple {
+    text-align: center;
+}

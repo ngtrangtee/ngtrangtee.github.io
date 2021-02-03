@@ -1,0 +1,33 @@
+/* List */
+ul {
+   list-style-type: square;
+   text-align: left; 
+}
+
+ul li {
+    background: #8da89f;
+    padding: 5px;
+    Margin-left: 35px;
+}
+
+/* Link color setting */
+a {
+    color:rgb(7, 46, 24)
+}
+
+a:visited {
+    color: rgb(151, 17, 100);
+    text-decoration: none;
+
+}
+
+/* Heading 1 */
+h1 {
+    text-align: center;   
+    color:palevioletred
+}
+
+/* Italicize text */
+.italic {
+    font-style: italic;
+}

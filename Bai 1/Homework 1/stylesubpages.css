@@ -1,0 +1,20 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.font-increase {
+    font-size: 20px;
+}
+
+.text-indent {
+    text-indent: 30px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
