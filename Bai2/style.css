@@ -20,3 +20,59 @@ p, li, a {
 li.text-purple {
     text-align: center;
 }
+
+/* Chọn tất cả thẻ a trong li */
+li a {
+    text-decoration: none;
+}
+
+/* Chỉ chọn các thẻ a trực tiếp bên trong thẻ li */
+li > a {
+    text-decoration: none;
+}
+
+/* Chỉ chọn duy nhất thẻ p ngay dưới ul; p cùng cấp với ul  */
+ul + p {
+    color: red
+}
+
+/* Chọn các thẻ p bên dưới ul, nhưng p phải cùng cấp với nhau */
+ul ~ p {
+
+}
+
+/* Chọn p trong thẻ div, mà p dưới ul */
+ul ~ div > p {
+}
+
+/* Chọn tất cả phần tử có thuộc tính href */
+[href] {
+    color: yellow;
+    text-decoration: none;
+}
+
+/* Chọn tất cả các phần tử href có thuộc tính google.com */
+ [href="https://google.com"] {
+     color: pink;
+ }
+
+ /* Chọn tất cả các phần tử trên trang, bất kể là thẻ gì */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box
+ }
+
+ /* Bộ chọn id cho riêng mỗi phần tử đó */
+ #this-text {
+     color:blue;
+ }
+
+/* Chọn tất cả class special text của thẻ p mà nằm dưới thẻ h1 */
+body h1 + p .special-text {
+    text-indent: 2px;
+}
+
+
+  
+
