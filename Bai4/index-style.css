@@ -1,0 +1,71 @@
+p {
+    display: blockinline;
+    width: 50%;
+    height: 30$;
+    padding-left: 30px;
+
+    shorthand property
+}
+
+h1 {
+    display: inline; 
+    font-size: 16pxfont-weight: 400 px;
+
+}
+
+h2 {
+    display: block;
+    width: 50%;
+    height: 30%;
+    padding: 10px 20px 40px;
+    background-color: #a0a0a0;
+    border-width: 5px;
+    border-style: dotted;
+    border-radius: 20px;
+    margin: 0;
+    overflow: auto;
+}
+
+.p1 {
+    margin-top: 20px;
+    margin-right: auto
+}
+border-width: 5px;
+border-style: dotted;
+
+/* Căn giữa một phần tử: Kết hợp auto left-right*/
+margin-left: auto;
+margin-right:auto;
+/* đẩy tất cả về phía bên phải */
+margin-right: auto; 
+
+.p1 {
+    display: block;
+    width: 20px;
+    text-align: center;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wallpaperflare.com%2Fgeladas-in-repose-bing-desktop-wallpaper-animal-themes-animal-wildlife-wallpaper-pzpok&psig=AOvVaw2z9XYfU-HqA0ztxWjWMzrr&ust=1613899980268000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKikyY2U-O4CFQAAAAAdAAAAABAD); 
+    /* Đặt ảnh hợp với kích thước vùng chứa */
+    background-size:cover; 
+    border-radius: 20px; 
+    margin: 30px; 
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    /* Số âm: lệch sang trái;  */
+    box-shadow: 5px 5px 10px 20px rgba(0,0,0,0)
+}
+
+/* Ảnh bị thiếu so với vùng chứa */
+background-size: contain;
+/* Repeat ảnh theo trục */
+background-repear: repeat-y hoặc repeat-x
+/* background màu gradient - góc, màu bắt đầu, màu kết thúc  */
+background-image: linear-gradient(45deg, red 0%, blue 100%)
+
+/* Div: Tạo ra các khối lớn trên trang */
+
+.container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Căn giữa toàn bộ */
