@@ -1,0 +1,93 @@
+* {
+    font-family: Roboto, Arial, sans-serif;
+    border-collapse: collapse;
+}
+p {
+    display: inline-block;
+    text-align: left;
+    padding-right: 5px;
+    color:  rgb(153, 0, 0);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+a {
+    padding-right: 5px;
+    color:  rgb(153, 0, 0);
+    font-weight: 700;
+
+}
+
+/* Chọn tất cả cột G */
+.tr .td1 {
+font-size: 15px;
+font-weight: 400;
+line-height: 40px;
+border-right: 1px solid #ddd;
+}
+
+/* Chọn table header */
+th {
+font-size: 15px;
+font-weight: 400;
+line-height: 34px;
+width: 85px;
+text-align: center;
+}
+
+/* Tất cả các table header bên dưới table header đầu tiên */
+th~th {
+color:rgb(31, 16, 226);
+text-decoration: none;
+font-size: 24px;
+font-weight: 400;
+text-align: center;
+width: 87.3333px;
+line-height: 40px;
+}
+
+td {
+    text-align: center;
+}
+.GDB {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    color: rgb(244, 8, 25);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 40px;
+
+}
+
+.giai1den5, td ~ td {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    border-left: 0px solid;
+    border-right: 0px solid;
+
+}
+
+.lastrow {
+    color: rgb(244, 8, 25);
+    line-height: 40px;
+
+}
+
+.grey-background {
+    background-color:rgb(241, 240, 240);
+}
+
+.border-right {
+    border-right: 1px solid #ddd;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+
+
+
+

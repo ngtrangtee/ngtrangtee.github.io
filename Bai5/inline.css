@@ -1,0 +1,30 @@
+/* kết hợp thuộc tính giữa inline và block với nhau */
+inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: #fff;
+}
+/* inline block không dùng margin được, muốn căn giữa phải dùng text-align */
+.text-align {
+text-align: center;
+}
+
+/* nên đặt class theo ý nghĩa style mình đặt */
+/* bộ chọn viết liền */
+
+/* Chọn ra phần tử có id là inline-block ĐỒNG THỜI phải có class là other */
+#inline-block.other {
+background-color: yellow;
+}
+
+/* Chọn ra tất cả phần tử có id là inline-block ở bên trong phần tử có class text-align */
+.text-align .inline-block {
+    text-align: left;
+}
+
+/* Nối tiếp nhiều bộ chọn vào với nhau */
+.text-align,.inline-block {
+    font-size: 18px;
+/*  */

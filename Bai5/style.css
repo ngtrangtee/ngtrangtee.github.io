@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+}
+
+/* làm mất chân dòng in-text của ảnh */
+img {
+    vertical-align: middle; 
+    /* max-width: Kích thước tối đa, nếu kích thước vùng chứa nhỏ hơn kích thước ảnh,sẽ tự động co vào; nếu kích thước vùng chứa lớn hơn thì sẽ giữ nguyên kích thước ảnh*/
+    max-width: 
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+.topbar {
+
+}
+.container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 120px;
+}
+
+.nav {
+  background-color: #2fa183;
+}
+
+/* Tắt cái chấm chấm đi; tắt padding mặt định */
+.menu {
+  list-style: none;
+  padding-left:0;
+}
+
+/* Dùng khối sẽ tính kích thước nội dung theo khối */
+.menu-item {
+    display:inline-block;
+    padding: 10px;
+    border-left: 1px dotted #fff;
+}
+
+.menu-item.active {
+    background-color: #2B94A5;
+}
+/* Nhìn thấy một khoảng cách giữa padding với border */
+.menu-link {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-item.topic {
+    border-left:none;
+    padding: 0;
+}
+
+/* Chọn cái bên trong menu topic; làm nó giống như mặc định ban đầu */
+.menu-item.topic .menu-link {
+text-transform: initial;
+border: 1px solid rgb(201,195,195);
+border-radius: 15px;
+font-size: 14px;
+padding: 3px 10px 3px 10px; 
+/* top,right,bottom,left */
+}
+
+/* PHẦN BODY */
+.left {
+    /* làm cho kích thước cả phần nội dùng là = width, và kích thước thạt sự sẽ cộng thêm padding */
+    box-sizing: content-box; 
+    display: inline-block;
+    /* width bây giờ nhờ border box, sẽ gồm cả border, padding, content, sau khi trừ đi */
+    width: 65%;
+    vertical-align: top;
+    padding-right: 10px;
+}
+/* border-box trong box-sizing làm cho ảnh bằng border */
+
+.right {
+    display: inline-block;
+    width: 35%;
+}
+
+.post-thumbnail {
+    border-radius: 10px;
+}
+
+.main-post .post-title {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.post-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-detail .post-detail-image {
+    width: 50px;
+    margin-right: 10px;
+
+}
+
+.time .relate {
+    color: #61ACBA;
+    font-size: 14px;
+}
+
+.time {
+    margin-right: 10px;
+}
+
+.right .post {
+    margin-bottom: 20px;
+}
+
+.right .post .post-thumbnail, .right .post .post-title {
+display: inline-block;
+}
+
+.right .post .post-thumbnail {
+    width: 60px;
+    vertical-align: top;
+}
+
+.right .post .post-title {
+    width: calc(100%-80px);
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500; 
+    padding-left: 10px;
+}
