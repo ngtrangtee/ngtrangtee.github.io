@@ -6,7 +6,7 @@ body {
 img {
     vertical-align: middle; 
     /* max-width: Kích thước tối đa, nếu kích thước vùng chứa nhỏ hơn kích thước ảnh,sẽ tự động co vào; nếu kích thước vùng chứa lớn hơn thì sẽ giữ nguyên kích thước ảnh*/
-    max-width: 
+    max-width: 100%;
 }
 
 .header {
@@ -14,8 +14,10 @@ img {
 }
 
 .topbar {
-
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
 .container {
   width: 900px;
   margin-left: auto;
@@ -27,13 +29,14 @@ img {
 }
 
 .nav {
-  background-color: #2fa183;
+  background-color: #2fa1b3;
 }
 
-/* Tắt cái chấm chấm đi; tắt padding mặt định */
+/* Tắt list style; tắt padding mặt định */
 .menu {
   list-style: none;
   padding-left:0;
+  margin: 0;
 }
 
 /* Dùng khối sẽ tính kích thước nội dung theo khối */
@@ -51,7 +54,7 @@ img {
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .menu-item.topic {
@@ -71,10 +74,8 @@ padding: 3px 10px 3px 10px;
 
 /* PHẦN BODY */
 .left {
-    /* làm cho kích thước cả phần nội dùng là = width, và kích thước thạt sự sẽ cộng thêm padding */
-    box-sizing: content-box; 
+    box-sizing: border-box; 
     display: inline-block;
-    /* width bây giờ nhờ border box, sẽ gồm cả border, padding, content, sau khi trừ đi */
     width: 65%;
     vertical-align: top;
     padding-right: 10px;
@@ -86,8 +87,9 @@ padding: 3px 10px 3px 10px;
     width: 35%;
 }
 
+/* Làm ảnh có viền bo tròn */
 .post-thumbnail {
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .main-post .post-title {
@@ -109,7 +111,8 @@ padding: 3px 10px 3px 10px;
 
 }
 
-.time .relate {
+.time, 
+.relate {
     color: #61ACBA;
     font-size: 14px;
 }
@@ -122,7 +125,9 @@ padding: 3px 10px 3px 10px;
     margin-bottom: 20px;
 }
 
-.right .post .post-thumbnail, .right .post .post-title {
+/* chọn bộ chọn post title bên trong*/
+.right .post .post-thumbnail, 
+.right .post .post-title {
 display: inline-block;
 }
 
@@ -132,7 +137,8 @@ display: inline-block;
 }
 
 .right .post .post-title {
-    width: calc(100%-80px);
+    box-sizing: border-box;
+    width: calc(100% - 80px);
     margin: 0;
     font-size: 20px;
     font-weight: 500; 
