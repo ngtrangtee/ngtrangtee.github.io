@@ -1,0 +1,107 @@
+/* Cuộn mượt hơn */
+body {
+    height: 1000px;
+    scroll-behavior:smooth;
+}
+
+.back-to-top {
+    display: block;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    color: #111;
+    padding: 10px;
+    border-radius: 80%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.menu, .sub-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    word-spacing:-1ch;
+    background: peachpuff;
+/* lúc nào menu cũng đính cố định trên trình duyệt */
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+.menu-item{
+    display:inline-block;
+    vertical-align: top;
+    padding: 10px;
+    position:relative;
+}
+
+.menu-item:nth-child(2) {
+    border-left: 1px dotted #fff;
+    border-right: 1px dotted #fff;
+}
+
+.menu-link, .sub-link {
+    text-decoration:none;
+}
+
+.menu-link{
+    display: block;
+    padding: 10px;
+    /* Thời gian biến đổi cho thuộc tính, làm sự biến đổi mượt mà hơn; có thể dùng all*/
+    transition: background 0.4s,  color 0.4s;
+}
+
+.sub-link{
+    display:block;
+    padding:5px;
+    transition: all 0.5s;
+}
+
+/* Áp dụng CSS cho menulink khi mà chuotj si chuyển qua */
+.menu-link:hover {
+    background: #fff;
+    color: palevioletred;
+}
+
+.menu-item:hover .menu-link{
+    background: #fff;
+    color:palevioletred
+}
+
+.sub-menu {
+    display:none;
+/* để căn theo thằng cha có position khác static */
+    position: absolute;
+    background: palevioletred;
+    top: 100%;
+    left:0;
+    right:0;
+}
+
+/* Chỉ áp dụng cái này khi hover chuột qua menu link thôi */
+/* Nên hover lên cao hơn một cái */
+.menu-item:hover > .sub-menu {
+    display: block;
+}
+
+.sub-item:hover > .sub-menu {
+display:block;
+}
+
+.sub-item {
+    position: relative;
+}
+
+.sub-item .sub-menu {
+    top: 0;
+    left: 100%;
+    right: unset;
+}
+
+.subitem:hover > .sub-link{
+background: #fff;
+color:palevioletred
+}

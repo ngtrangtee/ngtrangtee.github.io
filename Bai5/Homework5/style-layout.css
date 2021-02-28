@@ -1,6 +1,8 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
+/* Header */
 .welcome-img {
     display: block;
     margin-left: auto;
@@ -15,19 +17,27 @@
     font-size: 60px;
 }
 
+/* Navigation Pane */
 .menu {
     list-style: none;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 .menu-item {
     display: inline-block;
     text-align: center;
     padding-right: 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    color:olive;
+    font-weight:bold;
     font-size: 30px;
 }
 
+/* Main */
 .container {
 word-spacing :-1ch;
 width: 1200px;
@@ -35,34 +45,64 @@ margin-left: auto;
 margin-right: auto;
 }
 
-
 .main-section {
     box-sizing: border-box;
     display: inline-block;
-    width: 80%;
+    width: 65%;
     vertical-align: top;
     word-spacing: normal;
 }
 
+/* Tiêu đề */
+.main-title {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 900px;
+    color: darkslategrey
+}
+
+/* Imgs on the main section */
 .figure {
     width: 90%;
 }
 
 .caption {
     width: 728px;
-    font-size: 22px;
+    font-size: 14px;
     font-style: italic;
-    margin-bottom: 70px;
 }
 
+/* Paragraphs on the main section */
+.main-text {
+    display: block;
+    line-height: 30px;
+    width: 702px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* Right section */
 .right-section {
     box-sizing: border-box;
     display: inline-block;
-    width: 20%;
+    width: 30%;
     word-spacing: normal;
+    margin-left: 50px;
+    margin-top: 100px;
+    float: right;
+}
+
+.potrait {
+    display: block;
+    width: 80%;
 }
 
 .potrait-description {
+display: block;
 text-align: left;
 
 }
@@ -70,14 +110,14 @@ text-align: left;
 .img {
     width: 100%;
 }
-.potrait {
-    display: block;
-    width: 80%;
-}
 
+/* Footer */
 .footer {
     text-align: center;
     font-size: 30px;
-    color: cornflowerblue;
+    color: rgb(255, 255, 255);
     font-weight: 700;
+    background-color: peru;
+    height: 100px;
+    text-indent: bottom;
 }
