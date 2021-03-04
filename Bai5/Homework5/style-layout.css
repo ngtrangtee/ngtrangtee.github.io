@@ -22,12 +22,79 @@
     list-style: none;
     text-align: center;
     margin-bottom: 10px;
+    word-spacing: -1;
+    background-color: rgb(19, 43, 43);
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .menu-item {
     display: inline-block;
     text-align: center;
-    padding-right: 30px;
+    padding-right: 100px;
+    position: relative;
+}
+
+.menu, .sub-menu {
+    list-style: none;
+}
+
+.menu-link {
+    display: block;
+    padding: 10px;
+    /* transition:  all 0.5s; */
+}
+
+.sub-link {
+    display: block;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.menu-link .active, menu-link:hover, .sub-link:hover {
+    background: rgb(19, 43, 43);
+}
+
+.menu-item:hover > .sub-menu {
+    display: block;
+    height:85px;
+}
+
+/* .sub-item:hover > .sub-menu {
+    display: block;
+} */
+
+.sub-item {
+    position: relative;
+}
+
+/* .sub-item .sub-menu {
+    top:0;
+    left: 0;
+    width: 100%;
+} */
+
+.sub-item:hover > .sub-link {
+    background: rgb(19, 43, 43);
+}
+
+.menu-item:hover .menu-link {
+    background: rgb(19, 43, 43);
+
+}
+
+.sub-menu {
+  /* display: none; */
+  position: absolute;
+  background:  rgb(19, 43, 43);
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  /* overflow: hidden; */
+  transition: height 0.5s;
 }
 
 nav li a {
