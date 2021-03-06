@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+.login-form {
+  width: fit-content;
+  padding: 20px 50px 20px 0;
+  margin: 100px auto 0;
+  background-color: #fff;
+  box-shadow: 0 0 25px gray ;
+}
+
+h2 {
+  text-align: center;
+}
+
+form > div > label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+  line-height: 30px;
+  vertical-align: top;
+}
+
+.income output {
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: top;
+}
+
+form > div {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="number"],
+input[type="date"],
+input[type="range"],
+input[type="color"],
+select {
+  width: 200px;
+  height: 30px;
+  border-radius: 0;
+  outline: none;
+  border: 1px solid grey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  padding: 0 5px;
+}
+
+input[type="file"] {
+  border: 0;
+  line-height: 30px;
+  padding: 0;
+}
+
+.gender-option,
+.option-item {
+  display: inline-block;
+  line-height: 30px;
+}
+
+.action {
+  margin-left: 164px;
+}
+
+.action button,
+.button {
+    border: 1px solid grey;
+    border-radius: 0;
+    height: 30px;
+    padding: 0 15px;
+    background-color: transparent;
+}
+
+.action button:hover,
+.button:hover {
+  background-color: deeppink;
+  border-radius: 0;
+  padding: 10px;
+}
+
+.button {
+    width: unset;
+}
+
+input:focus, 
+select:focus {
+    border-color: deeppink;
+    border-width: 2px;
+    box-shadow: 0 0 0 2px deeppink;
+}
+
+button:focus{
+    outline: none;
+    border-color: firebrick;
+    box-shadow: 0 0 0 2px firebrick;
+}
+
+.username,
+.password {
+position: relative;
+}
+
+/* chưa đúng định dạng */
+input:invalid {
+    border-color: firebrick;
+    box-shadow: 0 0 0 2px firebrick;
+}
+
+/*Tạo ra phần tử ảo span ngay bên dưới input  */
+input + span::after {
+    display: block;
+    position: absolute;
+    right: 0; 
+    top: 0;
+    line-height: 30px;
+}
+
+/* Tạo ra phần tử ảo after bên trong input có invalid bằng cách input::after, phải có content*/
+input:invalid + span::after{
+    content: ":|";
+}
+
+input:not(:invalid) + span::after {
+    content: ":)";
+}
+/*  */
+
+/* Chữ type username, type password */
+input::placeholder {
+    font-style: italic;
+}
+
+/* Phải có thuộc tính place holder */
+input:placeholder-shown {
+    border-color: forestgreen;
+    box-shadow: 0 0 0 2px forestgreen;
+}
+
+#popup {
+    display:none;
+}
+
+#popup:not(:checked) + .popup {
+visibility: hidden;
+}
+
+#popup:checked + .popup {
+    visibility: visible;
+}
+
+.popup {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.popup-content {
+    background-color: #fff;
+    width: 500px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+/* popup bay từ trên xuống */
+    transform: translateY(-100%);
+    padding: 20px;
+    opacity: 0;
+    transition: all 0.5s;
+    position: relative;
+}
+
+/* Khi popup được check thì thay đổi content */
+#popup:checked + .popup .popup-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}

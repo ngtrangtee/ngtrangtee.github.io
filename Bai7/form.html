@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+
+  <body>
+    <h2>Form cá nhân</h2>
+    <!-- Tạo form đăng nhập -->
+    <form class="login-form" action="" method="" name="login">
+      <!-- form control -->
+      <!-- input để nhập dữ liệu -->
+      <!-- username -->
+      <div class="username">
+        <!-- For của label đi với id của input -->
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Type Username"
+          id="username"
+          required
+          autofocus
+        />
+        <span></span>
+      </div>
+      <!-- password -->
+      <div class="password">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Type Password"
+          id="password"
+          required
+        />
+        <span></span>
+      </div>
+
+      <div class="gender">
+          <label for="">Gender</label>
+        <div class="gender-option">
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+        </div>
+
+        <div class="gender-option">
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            checked
+          />
+          <label for="female">Female</label>
+        </div>
+
+        <div class="gender-option">
+          <input type="radio" id="female" name="gender" value="other" />
+          <label for="female">Other</label>
+        </div>
+      </div>
+
+      <div class="option">
+       <label for="">Other options</label>
+        <div class="option-item">
+          <input type="checkbox" name="option" id="remember" />
+          <label for="remember">Remember me</label>
+        </div>
+        <div class="option-item">
+          <input type="checkbox" name="option" id="email" value="email" />
+          <label for="email">I want to receive email</label>
+        </div>
+      </div>
+
+      <div class="avatar">
+        <label for="avatar">Avatar</label>
+        <!-- Chọn tất cả các loại ảnh dùng *, còn nếu chỉ chấp nhận một số loại thì chọn image/png -->
+        <!-- Chọn nhiều file, dùng multiple -->
+        <!-- Chụp ảnh capture chỉ có trên mobile -->
+        <input type="file" accept="image/*; capture=camera" />
+      </div>
+
+      <div class="age">
+        <label for="age">Age</label>
+        <input type="number" min="18" max="100" step="1" value="19" />
+      </div>
+
+      <div class="birthday">
+      <label for="birthday">Birthday</label>
+      <input name="birthday" id="birthday" type="date" value="2001-05-08"/>
+    </div>
+
+      <div class="education">
+        <label for="education">Education</label>
+        <select name="education" id="education">
+          <option value="">_________</option>
+          <option value="mau-giao" selected>Lớp mầm</option>
+          <option value="tieu-hoc">Tiểu học</option>
+          <option value="trung-hoc">Trung học</option>
+          <option value="dai-hoc">Đại học</option>
+          <option value="thac-sy">Thạc Sỹ</option>
+          <option value="tien-sy">Tiến sỹ</option>
+        </select>
+      </div>
+
+      <div class="income">
+       <label for="">Mức Thu Nhập</label>
+        <input
+          type="range"
+          name="income"
+          id="income"
+          oninput="incomeValue.value = income.value"
+          min="1"
+          max="1000"
+          value="200"
+        />
+        <output for="income" name="incomeValue">500</output> tỷ
+      </div>
+      <div class="favorite-color">
+        <label for="favorite-color">Favorite color</label>
+        <input type="color" name="favorite-color" id="favorite-color" />
+      </div>
+
+      <div class="action">
+        <button type="submit">Submit</button> 
+        <label class="button" for="popup">click me</label>
+      </div>
+</form>
+
+   <input type="checkbox" id="popup"/>
+<div class="popup">
+    <div class="popup-content">
+        <label id="close" for="popup">X</label>
+        <form action="" name="signup">
+        <h2>Form signup</h2>
+        <p>Đăng kí mới blahblahblhablajsgilwreouvij fvlkajv lf</p>
+    </form>
+    </div>
+</div>
+      </div>
+    </div>
+  </body>
+</html>
