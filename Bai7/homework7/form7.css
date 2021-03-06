@@ -224,12 +224,17 @@ h2 + p{
   margin-bottom: 11px;
 }
 
-#ho,#ten,#sdt-hoac-email:invalid {
+#sdt-hoac-email:invalid {
   border: 1px solid red;
 }
 
+#ho:invalid {
+   border: 1px solid red;
+}
 
-
+#ten:invalid{
+   border: 1px solid red;
+}
 
 #mat-khau-moi:invalid {
   border-color: red;
