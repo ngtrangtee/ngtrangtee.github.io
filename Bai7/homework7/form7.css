@@ -203,11 +203,13 @@ h2 + p{
   display: inline-block;
   border-color: #ccd0d5;
   margin-left: 0%;
+  position:relative;
 }
 
 .ten {
   display: inline-block;
   border-color: #ccd0d5;
+  position:relative;
 }
 
 #ho,

@@ -1,0 +1,161 @@
+/* đặt biến để lưu các giá trị: Màu sắc,  */
+:root {
+    --section-padding: 50px 0;
+    --red: #ef3634;
+}
+
+/* chung chung, không áp dụng cho ul */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&display=swap')
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:900px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+body {
+    font-family: font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size:18px;
+    line-height: 1.8;
+    color: 0,0,0;
+    height: 1000px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+strong, b, th, {
+    font-weight: 600;
+}
+
+/* Cấu trúc */
+.flex {
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.align-stretch {
+    align-items: stretch;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-center {
+    align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
+.wrap {
+    flex-wrap: nowrap;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex-basis: 8.33%;
+}
+.col-2 {
+    flex-basis: 16.67%;
+}
+.col-3 {
+    flex-basis: 25%;
+}
+.col-4 {
+    flex-basis: 33.33%;
+}
+.col-5 {
+    flex-basis: 41.67%;
+}
+.col-6 {
+    flex-basis: 50%;
+}
+.col-7 {
+    flex-basis: 58.33%;
+}
+.col-8 {
+    flex-basis: 66.67%;
+}
+.col-9 {
+    flex-basis: 75%;
+}
+.col-10 {
+    flex-basis: 83.33%;
+}
+.col-11 {
+    flex-basis: 91.67%;
+}
+.col-12 {
+    flex-basis: 100%;
+}
+
+/* filter */
+.filter{
+    list-style: none;
+}
+
+.filter-link{
+color:inherit;
+display: inline-block;
+text-transform: uppercase;
+border-bottom: 2px sold var(--grey);
+text-align: center;
+padding: 6px 0px;
+transition: all 0.5s;
+}
+
+.filter-link.active, .filter-link:hover {
+    color: var(--red);
+    font-weight: 600;
+    border-bottom: 2px solid var(--red);
+    font-size:15px;
+}
+
+/* type */
+.type {
+    list-style: none;
+}
+
+.type-item{
+    width: 100px;
+}
+
+.type-link{
+    display:block;
+    background-color: var(--grey);
+    color:#fff;
+    text-align: center;
+    font-size:14px;
+    padding:5px;
+    transition: all 0.3s;
+
+}
+

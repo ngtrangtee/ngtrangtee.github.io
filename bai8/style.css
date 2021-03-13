@@ -1,0 +1,213 @@
+/* Chung chung */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+:root {
+  --section-padding: 50px 0;
+  --red: #ef3634;
+  --grey: #dcdcdc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+}
+
+strong, b, th {
+  font-weight: 600;
+}
+
+/* Cấu trúc */
+.container {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.col-1 {
+  flex-basis: 8.33%;
+}
+
+.col-2 {
+  flex-basis: 16.67%;
+}
+
+.col-3 {
+  flex-basis: 25%;
+}
+
+.col-4 {
+  flex-basis: 33.33%;
+}
+
+.col-5 {
+  flex-basis: 41.67%;
+}
+
+.col-6 {
+  flex-basis: 50%;
+}
+
+.col-7 {
+  flex-basis: 58.33%;
+}
+
+.col-8 {
+  flex-basis: 66.67%;
+}
+
+.col-9 {
+  flex-basis: 75%;
+}
+
+.col-10 {
+  flex-basis: 83.33%;
+}
+
+.col-11 {
+  flex-basis: 91.67%;
+}
+
+.col-12 {
+  flex-basis: 100%;
+}
+
+/* Filter */
+.filter-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.filter {
+  list-style: none;
+}
+
+.filter-link {
+  text-transform: uppercase;
+  color: inherit;
+  font-size: 14px;
+  border-bottom: 2px solid var(--grey);
+  text-align: center;
+  transition: all 0.3s;
+  padding: 6px 0;
+}
+
+.filter-link.active, .filter-link:hover {
+  color: var(--red);
+  font-weight: 600;
+  border-bottom: 2px solid var(--red);
+}
+
+/* Type */
+.type {
+  list-style: none;
+  gap: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.type-item {
+  width: 100px;
+}
+
+.type-link {
+  display: block;
+  background-color: var(--grey);
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  transition: all 0.3s;
+}
+
+.type-link.active, .type-link:hover {
+  background-color: var(--red);
+}
+
+.recipe {
+  font-size: 14px;
+  text-align: center;
+}
+
+.recipe span {
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+/* Product */
+.product-list .col-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
