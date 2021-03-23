@@ -100,3 +100,4 @@ function uocSo(z) {
     return tong1;
 }
 console.log(uocSo(15));
+
