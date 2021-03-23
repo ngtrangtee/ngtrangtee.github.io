@@ -73,13 +73,13 @@ function soDu(arr7 = []) {
 }
 console.log(soDu([10, 5]));
 
-// Bài 8.Viết function truyền vào 1 chuỗi bất kỳ, có tác dụng sao chép đó chuỗi lên 10 lần
-function repeatString(arr8 = []) {
-  do {
-    arr8.push(arr8[0]);
-  } while (repeatString.length <= 5);
-}
-console.log(repeatString([1]));
+// // Bài 8.Viết function truyền vào 1 chuỗi bất kỳ, có tác dụng sao chép đó chuỗi lên 10 lần
+// function repeatString(arr8 = []) {
+//   do {
+//     arr8.push(arr8[0]);
+//   } while (repeatString.length <= 5);
+// }
+// console.log(repeatString([1]));
 
 // // Bài 9.Viết function truyền vào 1 chuỗi bất kỳ, có tác dụng sao chép đó chuỗi lên 10 lần, ngăn cách nhau bởi dấu gạch ngang
 // function repeatStringWithDash(arr9 = []) {
