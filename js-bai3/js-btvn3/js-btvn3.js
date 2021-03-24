@@ -1,6 +1,6 @@
 // Bài 1.Viết function truyền vào 1 mảng. Kiểm tra mảng đó có phải là mảng tăng dần hay không
 function tangDan(arr1 = []) {
-  for (let i = 0; i < arr1.length - 1; i++) {
+  for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] >= arr1[i + 1]) {
       return false;
     }
