@@ -7,9 +7,23 @@ let value = 0;
 cong.addEventListener("click", function () {
     value++;
     numberSelector.innerText = value;
+    if (value < 0) {
+        numberSelector.style.color = "red";
+    } else if (value > 0) {
+        numberSelector.style.color = "green"
+    } else {
+        numberSelector.style.color = '#333333';
+    }
 });
 tru.addEventListener("click", function () {
     value--;
     numberSelector.innerText = value;
+    if (value < 0) {
+        numberSelector.style.color = "red";
+    } else if (value > 0) {
+        numberSelector.style.color = "green"
+    } else {
+        numberSelector.style.color = '#333333';
+    }
 }) 
 
