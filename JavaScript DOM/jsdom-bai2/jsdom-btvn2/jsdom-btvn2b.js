@@ -27,3 +27,28 @@ tru.addEventListener("click", function () {
     }
 }) 
 
+// CHữa bài tập về nhà
+const prevBtn = document.querySelector('.prevBtn');
+const nextBtn = document.querySelector(".nextBtn");
+const counter = docuemnt.querySelector('#counter')
+let number = 0;
+
+    // Xử lí nút trừ
+prevBtn.addEventListener('click', function () {
+    number-- //number=number -1
+})
+    //Xử lí nút cộng  
+nextBtn.addEventListener('click', function () {
+    number++  
+})
+
+function update() {
+    counter.innerText = number;
+    if (number > 0) {
+        counter.style.color = 'green'
+    } if (number == 0) {
+        counter.style.color = '#33333';
+    } else {
+        counter.style.color = 'red';
+    }
+}

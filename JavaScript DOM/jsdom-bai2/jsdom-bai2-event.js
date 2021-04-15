@@ -53,5 +53,31 @@ showHideButton.addEventListener('click', function () {
 })
 
 
+      let button = document.createElement("button");
+      button.innerText = "Add";
+
+      let input = document.createElement("input");
+      document.body.appendChild(button);
+      document.body.appendChild(input);
+
+      button.addEventListener("click", function () {
+        let addLi = document.createElement("li");
+        addLi.innerText = input.value;
+        ul.appendChild(addLi);
+      });
+
+      let remove = document.createElement("button");
+      remove.innerText = "Remove";
+      document.body.appendChild(remove);
+
+      let allLi = document.getElementsByTagName("li");
+
+      remove.addEventListener("click", function () {
+        ul.removeChild(allLi[allLi.length - 1]);
+      });
+      let hide = document.createElement("button");
+      hide.innerText = "Hide";
+      document.body.prepend(hide);
+
 
 
