@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #74b9ff;
+            height: 100vh;
+        }
+
+        #canvas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            padding: 100px;
+            padding-top: 0;
+        }
+
+        h2 {
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: #0984e3;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #primary-number,
+        #secondary-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+            width: 125px;
+            height: 125px;
+            box-sizing: border-box;
+        }
+
+        #primary-number {
+            border: solid 4px #0984e3;
+        }
+
+        #secondary-number {
+            border: solid 4px #0984e3;
+        }
+
+        #operator,
+        #equal {
+            font-weight: bold;
+            font-size: 40px;
+            padding: 30px;
+        }
+
+        input {
+            border: solid 4px #0984e3;
+            width: 125px;
+            height: 125px;
+            text-align: center;
+            outline: none;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            border: solid 2px #0984e3;
+            background: #0984e3;
+            color: white;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="canvas">
+        <h2>Thử tài tính toán nào bạn ơi!</h2>
+
+        <div class="game-info">
+            <p class="score-box">Score : <span class="score"></span></p>
+            <p class="time-box">Time : <span class="time"></span></p>
+            <p class="high-score-box">High Score: <span class="high-score"></span></p>
+        </div>
+        
+        <div class="main">
+            <div id="primary-number">7</div>
+            <div id="operator">+</div>
+            <div id="secondary-number">10</div>
+            <div id="equal">=</div>
+            <div>
+                <input type="text" id="result">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./main.js"></script>
+
+</html>

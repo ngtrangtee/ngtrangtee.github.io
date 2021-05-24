@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+            background-color: cadetblue;
+        }
+        button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            background-color: brown;
+            color: #fff;
+            border: none;
+
+            position: fixed;
+            right: 3rem;
+            bottom: 3rem;
+            cursor: pointer;
+
+            transition: all .3s ease-in
+        }
+        .hide {
+            display: none;
+            /* Muốn hiện lên - xóa class hide đi */
+        }
+    </style>
+</head>
+<body>
+    <!-- Ban đầu ẩn, cuộn chuột xuống thì mới hiện ra -->
+    <button class="hide">TOP</button>
+    <script>
+        const btn = document.querySelector('button')
+        window.addEventListener('scroll', function() {
+        // Tính từ trên cùng, khi scroll được 300 đơn vị, đúng sẽ đi vào if
+        if(document.documentElement.scrollTop > 300) {
+            btn.classList.remove('hide');
+        } else {
+            btn.classList.add('hide')
+        }
+        })
+// window thuộc về đối tượng màn hình
+        btn.addEventListener('click', function() {
+            window.scrollTo({
+                top : 0,
+                behavior: 'smooth'
+                
+            })
+        })
+    </script>
+</body>
+</html>

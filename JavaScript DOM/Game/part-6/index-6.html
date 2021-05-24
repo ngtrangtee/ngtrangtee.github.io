@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM</title>
+
+    <link rel="stylesheet" href="../part-5/style.css" />
+  </head>
+
+  <body>
+      <!-- 1. Start -->
+      <div id="start">
+          <div>
+          <label for="player-name">Player Name</label>
+          <input type="text" name="player-name" id="name" placeholder="Type Your Name">
+          </div>
+          <div>
+          <label for="image-url">Profile Picture</label>
+          <input type="url" name="image-url" id="image-url">
+          </div>
+          <div>
+            <button name="start-button" class="start-button">Start Game</button>
+          </div>
+
+          </div>
+      </div>
+      <!-- 2. Game -->
+      <div id="main-screen">
+      <div id="game">
+        <div class="game-container">
+          <h2>Thử tài tính toán nào bạn ơi!</h2>
+
+          <div class="game-info">
+            <p class="score-box">Score : <span class="score"></span></p>
+            <p class="time-box">Time : <span class="time"></span></p>
+            <p class="high-score-box">
+              High Score: <span class="high-score"></span>
+            </p>
+          </div>
+          <div class="main">
+            <div id="primary-number">7</div>
+            <div id="operator">+</div>
+            <div id="secondary-number">10</div>
+            <div id="equal">=</div>
+            <div>
+              <input type="text" id="result" />
+            </div>
+          </div>
+        </div>
+
+        <div class="lb-wrapper">
+          <h2>Bảng xếp hạng</h2>
+          <div class="lb-list">
+            <div class="list-header">
+              <div class="list-rank"></div>
+              <div class="list-info">Học viên</div>
+              <div class="list-score">Điểm</div>
+            </div>
+            <div class="list-player-wrapper">
+              <div class="list-player">
+                <!-- RENDER OTHER RANK STUDENT -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- End game -->
+      <div id="end">
+        <p class="final-score-holder"> Final Score: <span class="final-score"></span></p>
+        <div class ="final-buttons">
+          <button class="play-again-button">Play Again</button>
+          <button class="exit-button">Exit Game</button>
+        </div>
+
+      </div>
+  </body>
+
+  <script src="../part-5/main1.js"></script>
+</html>

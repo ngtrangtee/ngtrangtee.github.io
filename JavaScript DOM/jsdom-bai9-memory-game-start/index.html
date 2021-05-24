@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Bắt đầu game -->
+    <div id="start-game">
+        <h1>Memomry card</h1>
+        <div class="level-container">
+            <p>Chọn level game</p>
+            <div class="select-container">
+                <img src="https://img.icons8.com/nolan/64/controller.png" />
+                <select id="level-option">
+                    <option value="2">4 Cards</option>
+                    <option value="4">8 Cards</option>
+                    <option value="6">12 Cards</option>
+                </select>
+            </div>
+            <button id="btn-start-game">Bắt đầu</button>
+        </div>
+    </div>
+
+    <!-- Chơi game -->
+    <div id="game">
+        <div class="control">
+            <h1>Memomy game</h1>
+            <div class="time-game">
+                <img src="https://img.icons8.com/dotty/80/26e07f/love-time.png" />
+                <p id="time">00:00s</p> <!-- Thời gian chơi game -->
+            </div>
+            <div class="step-game">
+                <img src="https://img.icons8.com/dotty/80/26e07f/month-in-love.png" />
+                <p id="step">0 bước</p> <!-- Số bước chơi -->
+            </div>
+        </div>
+        <div class="game-container">
+            <div class="memory-game">
+                <div class="memory-card" data-name="luffy" onclick="flipCard(this)">
+                    <img src="https://i.pinimg.com/564x/9f/2f/72/9f2f72f1c63e6c62ac0ca3781e270975.jpg" class="front-face" alt="luffy">
+                    <img src="https://i.pinimg.com/originals/b9/70/33/b97033a8708d2cbaf7d1990020a89a54.jpg" class="back-face" alt="card-back">
+                </div>
+                <div class="memory-card" data-name="luffy" onclick="flipCard(this)">
+                    <img src="https://i.pinimg.com/564x/9f/2f/72/9f2f72f1c63e6c62ac0ca3781e270975.jpg" class="front-face" alt="luffy">
+                    <img src="https://i.pinimg.com/originals/b9/70/33/b97033a8708d2cbaf7d1990020a89a54.jpg" class="back-face" alt="card-back">
+                </div>
+                <div class="memory-card" data-name="zoro" onclick="flipCard(this)">
+                    <img src="https://i.pinimg.com/236x/d3/3f/c0/d33fc0cd1bf76766555436c2307b94d7.jpg" class="front-face" alt="zoro">
+                    <img src="https://i.pinimg.com/originals/b9/70/33/b97033a8708d2cbaf7d1990020a89a54.jpg" class="back-face" alt="card-back">
+                </div>
+                <div class="memory-card" data-name="zoro" onclick="flipCard(this)">
+                    <img src="https://i.pinimg.com/236x/d3/3f/c0/d33fc0cd1bf76766555436c2307b94d7.jpg" class="front-face" alt="zoro">
+                    <img src="https://i.pinimg.com/originals/b9/70/33/b97033a8708d2cbaf7d1990020a89a54.jpg" class="back-face" alt="card-back">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kết thúc game -->
+    <div id="end-game">
+        <div class="info">
+            <h1>Kết thúc</h1>
+            <p>Chúc mừng bạn đã hoàn thành game trong</p>
+            <div class="box">
+                <div class="time-box">
+                    <img src="https://img.icons8.com/dotty/80/26e07f/love-time.png" />
+                    <p>30s</p> <!-- Hiển thị thời gian khi end game -->
+                </div>
+                <div class="step-box">
+                    <img src="https://img.icons8.com/dotty/80/26e07f/month-in-love.png" />
+                    <p>10 bước</p> <!-- Hiển thị số bước khi end game -->
+                </div>
+            </div>
+            <div class="btns">
+                <button id="btn-play-again">Chơi lại</button>
+                <button id="btn-reload">Thoát game</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

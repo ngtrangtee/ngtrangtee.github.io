@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Kiểm tra
+        if (typeof (Storage) !== "undefined") {
+            console.log('Có hỗ trợ'
+            )
+        } else {
+            console.log('không hỗ trợ')
+        }
+
+// Lưu dữ liệu (key,value)
+        // Lưu dữ liệu bình thường, không phải object
+localStorage.setItem('number','1')
+localStorage.setItem('name', 'nguyễn vân a')
+localStorage.setItem("isStatus",'true')
+
+// Lưu object
+let ranking = [
+  {
+    name: "Nguyễn Văn A",
+    avatar:
+      "https://scontent.fhan3-1.fna.fbcdn.net/v/t1.6435-9/92830425_112092557127949_1835896737181466624_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=tm-735wE_oAAX8ku06q&_nc_ht=scontent.fhan3-1.fna&oh=358690da11c4e966586ba195561832ca&oe=609EDA1A",
+    score: 5,
+  },
+  {
+    name: "Nguyễn Văn B",
+    avatar:
+      "https://www.rainforest-alliance.org/sites/default/files/styles/large/public/2016-10/nine-banded-armadillo-square.jpg?itok=kJ-u3vEJ",
+    score: 9,
+  },
+  {
+    name: "Nguyễn Văn C",
+    avatar:
+      "https://www.rainforest-alliance.org/sites/default/files/styles/large/public/2016-10/nine-banded-armadillo-square.jpg?itok=kJ-u3vEJ",
+    score: 8,
+  },
+];
+
+    // JSON
+localStorage.setItem('ranking',JSON.stringify(ranking))
+
+// Lấy dữ liệu ra
+let name = localStorage.getItem('name')
+console.log(name)
+
+//   Lấy theo ranking
+let rankingLocal = localStorage.getItem("ranking");
+let rankingParse = JSON.parse(rankingLocal)
+console.log(rankingParse)
+
+// Xóa 1 (dựa vào key)
+localStorage.removeItem("number")
+// Xóa hết
+localStorage.clear();
+
+    </script>
+</body>
+</html>

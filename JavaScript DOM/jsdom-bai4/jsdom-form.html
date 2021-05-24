@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        span {
+            display: block;
+        }
+
+        div {
+            margin: 0.5rem 0;
+        }
+
+        .error {
+            border: 2px solid red;
+        }
+
+        .success {
+            border: 2px solid green;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <form>
+      <div>
+        <input type="text" id="username" placeholder="enter username"/>
+        <span></span>
+      </div>
+
+      <div>
+        <input type="password" id="password" placeholder="enter password" autocomplete="off"/>
+        <button id="btn-show-password">Show</button>
+        <span></span>
+      </div>
+
+      <div>
+          <input type="text" id="age" placeholder="enter age">
+          <span></span>
+      </div>
+
+      <button type="submit" id="btn-submit">Submit</button>
+    </form>
+    <script src="jsdom-form.js"></script>
+  </body>
+</html>
